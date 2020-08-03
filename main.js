@@ -22,10 +22,13 @@ function submitValue() {
     if (generateValue == inputValue) {
         document.getElementById("match").style.display = "block";
         document.getElementById("unMatch").style.display = "none";
+        document.getElementById("showResult").value = " " ;
+        document.getElementById("showRandomNumber").value = " " ;
     } 
     else {
         document.getElementById("unMatch").style.display = "block";
         document.getElementById("match").style.display = "none";
+        document.getElementById("showResult").value = " " ;
         actionLeft();
     }
 }
